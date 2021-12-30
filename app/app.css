@@ -1,0 +1,662 @@
+/* app css stylesheet */
+
+.menu {
+    list-style: none;
+    border-bottom: 0.1em solid black;
+    margin-bottom: 2em;
+    padding: 0 0 0.5em;
+}
+
+.menu:before {
+    content: "[";
+}
+
+.menu:after {
+    content: "]";
+}
+
+.menu > li {
+    display: inline;
+}
+
+.menu > li + li:before {
+    content: "|";
+    padding-right: 0.3em;
+}
+
+#menuItem2{
+    height: 100%;
+    padding: 20px 25px;
+    color: #93a1af;
+    font-size: 20px;
+    text-align: center;
+}
+
+#menuItem2 > p{
+
+}
+
+#menuItem2:hover{
+    background-color: black;
+    transition: all 0.3s ease;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+#menuItem2:checked{
+    background-color: #000000;
+    transition: all 0.3s ease;
+}
+
+#menuItem2:hover p{
+
+}
+
+#menuItem2Selected{
+    padding: 20px 25px;
+    background-color: #ffffff;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
+
+#menuItem2Selected > p{
+
+}
+#logo{
+    display: inline-block;
+    cursor: pointer;
+    padding-left: 20px;
+}
+
+#logo > div{
+    color: #fff;
+    font-family: Bodoni;
+    text-transform: uppercase;
+    text-align: center;
+}
+#headContact{
+    display: inline-block;
+    float: right;
+    padding-top: 12px;
+}
+
+#callContact{
+    display: inline-block;
+    padding-right: 20px;
+}
+
+#callContact > a{
+    color: white;
+    text-decoration: none;
+}
+
+#callContact > img{
+    height: 30px;
+}
+
+#mailContact{
+    display: inline-block;
+}
+
+#mailContact > a{
+    color: white;
+    text-decoration: none;
+}
+
+#mailContact > img{
+
+    height: 30px;
+}
+
+.mainlogo{
+    display: block;
+    line-height: 40px;
+    font-size: 60px;
+}
+
+.subLogo{
+    font-size: 8.62px;
+    display: inline;
+}
+
+#mainMenu{
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 16px;
+    padding-left: 90px;
+}
+
+#headerWrap{
+    padding: 20px 40px 20px 20px;
+    height: 95px;
+    background-color: rgba(50,50,50, 0.87);
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+#bannerMain{
+    height: 440px;
+}
+
+#productMenu{
+    height: 68px;
+    background-color: #EAEBED;
+}
+
+#bannerImg{
+    margin:auto;
+    width: 100%;
+    height: 440px;
+}
+
+#mainMenuItem{
+    display: inline-block;
+}
+
+#mainMenuItem > a{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    padding: 7px 14px;
+    margin: 0 4px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#mainMenuItem > a:hover{
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-top: white solid 4px;
+    border-bottom: white solid 4px;
+}
+
+#logoImg{
+    width: 100px;
+}
+
+#logoTitle{
+}
+
+#productMenuSub{
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+#itemDescWrap{
+
+}
+
+#itemDetailsWrap{
+    padding: 20px;
+}
+
+#itemDescHeader{
+    text-transform: capitalize
+}
+
+#itemDescHeader> h1{
+    margin-top: 0;
+}
+
+#itemIntro{
+    padding: 10px;
+    background-color: bisque;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+#itemDescMain{
+    padding: 20px;
+}
+
+#subtypeHeaderWrap{
+    margin-bottom: 10px;
+}
+
+#subtypeHeading{
+    font-size: 24px;
+    text-transform: capitalize
+}
+
+#subtypeIntro{
+    padding: 10px;
+    background-color: gainsboro;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+#subtypeItem {
+    width: calc(50% - 15px);
+    display: inline-block;
+    padding: 10px 0 10px 10px;
+}
+
+#subtypeItemDetails{
+    /*float: right;*/
+    /*display: inline-block;*/
+    /*width: 50%;*/
+    text-align: center;
+    vertical-align: top;
+    padding-top: 10px;
+}
+
+#subtypeItemImg{
+    width: 100%;
+    border-radius: 10px;
+}
+
+#subtypeItemImgWrap{
+    /*display: inline*/
+}
+
+#subtypeItemHeading{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+#productMenuDetails{
+    padding: 10px 20px;
+}
+
+#subtypeWrap{
+    display: inline-block;
+    padding: 10px;
+    background-color: #EAEBED;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+#subtypeWrap:hover{
+    display: inline-block;
+    padding: 10px;
+    background-color: black;
+    margin: 10px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+#subtypeWrap:hover > a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+#subtypeName{
+    text-decoration: none;
+    color: #93a1af;
+    font-size: 16px;
+}
+
+#subtypeName:hover{
+
+}
+
+#subtypeItemDesc{
+
+}
+
+#introductionWrap{
+    width: 100%;
+    background-color: #F9FAFB;
+    background-image: url("item/back.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 52px 0px 55px;
+    text-align: center;
+}
+
+#introDescWrap{
+    margin-bottom: 45px;
+}
+
+#introDescWrap > h1{
+    text-align: center;
+    margin: 0px 0px 40px;
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+#introDescWrap > p{
+    line-height: 34px;
+    font-size: 15px;
+    padding: 0px 40px;
+    margin-bottom: 35px;
+    color: #fff;
+}
+
+#introDescWrap > a{
+    padding: 11px 23px;
+    background-color: transparent;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 0;
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+#featuresWrap{
+    margin: 0 30px;
+}
+
+.featureDesc{
+    width: calc(100%/3 - 40px);
+    padding: 0 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.featureInDesc{
+    float: left;
+    width: 100%;
+    background-color: #fff;
+    min-height: 216px;
+    padding: 30px 0px;
+}
+
+.featureInDesc h2{
+    font-weight: 300;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+.featureInDesc h2 span{
+     border-bottom: 1px solid #000;
+}
+
+.featureInDesc p{
+    font-size: 14px;
+    padding: 0px 30px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+#featureWrap{
+
+}
+
+#featureWrap h1{
+    text-align: center;
+    margin: 0;
+    color: #93a1af;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 300;
+    padding: 20px;
+    background-color: #EAEBED;
+}
+
+.featureSlide{
+    width: 100%;
+    padding: 20px;
+}
+
+.featureItem{
+    display: inline-block;
+    width: calc(100% / 3 - 43px);
+    padding: 10px;
+    border: 0.3px black solid;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.featureItemImg{
+
+}
+
+.featureItemImg img{
+    vertical-align: middle;
+    width: 100%;
+    height: 210px;
+}
+
+.featureItemDesc{
+    margin: 20px;
+}
+
+.featureItemHeading{
+    margin: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.featureItemDescription{
+    font-size: 14px;
+    margin: 10px;
+}
+
+#footerWrap{
+    background-color: #323232;
+    padding: 20px;
+}
+
+#footerProductWrap{
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+}
+
+.footerProductHead{
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: normal;
+    border-left: 5px solid #FCFCFC;
+    margin-bottom: 22px;
+    padding: 5px 5px 5px 20px;
+}
+
+.footerLisWrap{
+
+}
+
+.footerList{
+    list-style: none;
+    margin: 0px;
+    padding: 0 0 0 20px;
+}
+
+.footerItem{
+    padding: 7px 0px 7px 10px;
+    /* position: relative; */
+    margin-bottom: 0;
+    width: 65%;
+}
+
+.footerLink{
+    color: #fff;
+    text-decoration: none;
+}
+
+.footerLink:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footerBulletImg{
+    width: 18px
+}
+
+.borderBottomFooter{
+    background-color: white;
+    height: 1px;
+    width: calc( 100% - 17px );
+    display: block;
+    margin-top: 7px;
+    margin-left: 17px;
+}
+
+#footerContactWrap{
+    vertical-align: top;
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+}
+
+.address{
+    padding: 7px 0px 7px 10px;
+    color: #fff;
+}
+
+.mailAddress{
+    padding: 7px 0px 7px 10px;
+    color: #fff;
+}
+
+.mailAddress > a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.mailAddress > a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+#menuBar{
+    background-color: #EAEBED;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.menuBarList{
+    display: inline-block;
+    padding: 20px 15px;
+    color: #93a1af;
+    font-size: 20px;
+}
+
+.menuBarList > a{
+    text-decoration: none;
+    color: #93a1af;
+}
+
+.menuBarList:hover{
+    display: inline-block;
+    padding: 20px 15px;
+    color: #fff;
+    font-size: 20px;
+    background-color: black;
+    transition: all 0.3s ease;
+}
+
+.menuBarList:hover > a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.introHead{
+    background-color: black;
+    padding: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-size: 40px;
+}
+
+.introDesc{
+    border: lightgrey solid 0.3px;
+    margin: 30px;
+    padding: 20px;
+    box-shadow: lightgrey 2px 3px 14px 2px;
+}
+
+.introDesc > p{
+    font-size: 18px;
+    line-height: 28px;
+    font-family: "Times New Roman";
+}
+
+.introDesc > h2{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.manuImgWrap {
+    height: 700px;
+}
+
+.manuImg{
+    object-fit: fill;
+    height: 700px;
+    width: 100%;
+}
+
+.contactSec{
+    display: inline-block;
+    vertical-align: top;
+    width: calc( (100% - 100px)/3 );
+}
+
+.contactSec > p{
+    text-transform: capitalize;
+}
+
+.contactSec > h2{
+    text-transform: capitalize;
+}
+
+.contactSec > ul > li{
+    text-transform: capitalize;
+}
+
+.contactSec > ul > li > h3{
+    text-transform: capitalize;
+}
+
+.contactSec > h4{
+    text-transform: capitalize;
+    display: inline;
+}
+
+.sectionline{
+    display: inline-block;
+    background-color: #323232;
+    width: 4px;
+    height: 293px;
+    vertical-align: top;
+    margin-top: 110px;
+    margin-right: 16px;
+}
+
+.subMenuItem{
+    position: absolute;
+    color: white;
+    margin: 10px 0 0 18px;
+    padding: 10px;
+    background: rgba(50,50,50,0.7);
+}
+
+.subMenuItem > p{
+    margin: 0 0 10px;
+    font-size: 16px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.subMenuItem > p > a{
+    text-decoration: none;
+    color: white;
+}
+
+#map{
+    display: inline-block;
+    width: 300px;
+}
+
+#itemBody{
+
+}

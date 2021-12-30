@@ -1,0 +1,170 @@
+    <div id="bannerMain">
+        <div uib-carousel active="active" interval=5000 >
+            <div uib-slide index="0">
+                <img src="item/mainslider/5.jpg" id="bannerImg">
+            </div>
+            <div uib-slide index="1">
+                <img src="item/mainslider/7.jpg" id="bannerImg">
+            </div>
+            <div uib-slide index="2">
+                <img src="item/mainslider/8.jpg" id="bannerImg">
+            </div>
+            <div uib-slide index="3">
+                <img src="item/mainslider/6.jpg" id="bannerImg">
+            </div>
+            <div uib-slide index="4">
+                <img src="item/mainslider/9.jpg" id="bannerImg">
+            </div>
+            <div uib-slide index="5">
+                <img src="item/mainslider/1.jpg" id="bannerImg">
+            </div>
+            <div uib-slide index="6">
+                <img src="item/mainslider/2.jpg" id="bannerImg">
+            </div>
+        </div>
+    </div>
+
+    <div id="productMenu">
+        <div id="productMenuSub">
+            <div id={{idsandstone}} style="display: inline-block;" ng-click="stoneSelect('sandstone')">
+                Sandstone
+            </div>
+            <!--<div id="menuItem2Selected" style="display: inline-block;" ng-click="stoneSelect('sandstone')" ng-if="selectedStone == 'sandstone'" >-->
+                <!--Sandstone-->
+            <!--</div>-->
+            <div id={{idcobble}} style="display: inline-block;" ng-click="stoneSelect('cobble')">
+                Cobble
+            </div>
+            <div id={{idgranite}} style="display: inline-block;" ng-click="stoneSelect('granite')">
+                Granite
+            </div>
+            <div id={{idledger}} style="display: inline-block;" ng-click="stoneSelect('ledger')">
+                Ledger
+            </div>
+            <div id={{idlimestone}} style="display: inline-block;" ng-click="stoneSelect('limestone')">
+                Limestone
+            </div>
+            <div id={{idmarble}} style="display: inline-block;" ng-click="stoneSelect('marble')">
+                Marble
+            </div>
+            <div id={{idslates}} style="display: inline-block;" ng-click="stoneSelect('slates')">
+                Slates
+            </div>
+            <div id={{idsteps}} style="display: inline-block;" ng-click="stoneSelect('steps')">
+                Steps
+            </div>
+        </div>
+    </div>
+    <div id="productMenuDetails" ng-if="selectedStoneData">
+        <div ng-if="selectedStoneData">
+            <!--{{selectedStoneData}}-->
+            <div id="subtypeWrap" ng-repeat="subtype in subtypeDetails">
+                <a id="subtypeName" href="/#!/view2/{{selectedStone}}/{{subtype}}">{{selectedStoneData.subtype[subtype].name}}</a>
+            </div>
+        </div>
+    </div>
+    <!--introduction .....-->
+    <div id="introductionWrap">
+        <div id="introDescWrap">
+            <h1>shri Ram natural sandStone(P) Ltd.</h1>
+            <p>At Shri Ram Natural Sandstones (P) Ltd. our goal is your total satisfaction with our products and services. From classic to contemporary, our exacting quality standards and rich selection of colors, textures and finishes help bring your distinctive designs to life with the natural beauty, durability and elegance only natural stones can provide.</p>
+            <a href="#!/introduction">Read more</a>
+        </div>
+        <div id="featuresWrap">
+            <div class="featureDesc">
+                <div class="featureInDesc">
+                    <h2>
+                        <span>THE WIDEST OF VARIETIES</span>
+                    </h2>
+                    <p>
+                        With its comprehensive range of natural stones in an array of picturesque shades, we offer you a variety of products in different shapes, dimensions and finishes that are difficult to find anywhere else.
+                    </p>
+                </div>
+            </div>
+            <div class="featureDesc">
+                <div class="featureInDesc">
+                    <h2>
+                        <span>AN OPTIMUM MIX OF PRICE, SERVICE & QUALITY</span>
+                    </h2>
+                    <p>
+                        Market leading prices, impeccable service and supereme quality products are simultaneously offered by SRNSS; thus ensuring that you don’t have to compromise on anything.
+                    </p>
+                </div>
+            </div>
+            <div class="featureDesc">
+                <div class="featureInDesc">
+                    <h2>
+                        <span>PROWESS IN CUSTOMIZED PROJECTS</span>
+                    </h2>
+                    <p>
+                        Weather it is about desired sizes, finishes or edges; SRNSS has a rich experience & expertise in delivering natural stone products to various projects across the globe as per customer’s requirements & specifications.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--features carousel....-->
+      <div id="featureWrap">
+        <h1>YOUR RELIABLE SOURCE OF INDIAN NATURAL STONE</h1>
+        <div uib-carousel active="active">
+            <div uib-slide class="featureSlide" index="0">
+                <div class="featureItem" ng-click="goTomanufacturing()">
+                    <div class="featureItemImg">
+                        <img src="item/0.jpeg" >
+                    </div>
+                    <div class="featureItemDesc">
+                        <p class="featureItemHeading">Manufacturing unit</p>
+                        <p class="featureItemDescription">SRNSS is a leading manufacturer and exporter of Indian natural stones like granite, marble, state, sandstone, quartzite and limestone.</p>
+                    </div>
+                </div>
+                <div class="featureItem" ng-click="goTopackaging()">
+                    <div class="featureItemImg">
+                        <img src="../item/pack/0.jpeg"/>
+                    </div>
+                    <div class="featureItemDesc">
+                        <p class="featureItemHeading">PACKAGING FACILITY</p>
+                        <p class="featureItemDescription">Packaging of construction stones, such as granite and marble are done with utmost care in strong wooden crates.</p>
+                    </div>
+                </div>
+                <div  class="featureItem" ng-click="goToquality()">
+                    <div class="featureItemImg">
+                        <img src="../item/quality.png"/>
+                    </div>
+                    <div class="featureItemDesc">
+                        <p class="featureItemHeading">QUALITY CONTROL</p>
+                        <p class="featureItemDescription">At SRNSS, we are strict about quality. Our aim is to manufacture and deliver products with zero defect.</p>
+                    </div>
+                </div>
+            </div>
+            <div uib-slide class="featureSlide" index="1">
+                <div class="featureItem" ng-click="goTodelivery()">
+                    <div class="featureItemImg">
+                        <img src="../item/delivery.jpg" >
+                    </div>
+                    <div class="featureItemDesc">
+                        <p class="featureItemHeading">SRNSS DELIVERY</p>
+                        <p class="featureItemDescription">We have very effective transportation and shipping facilities that ensure that all the deliveries happen on time.</p>
+                    </div>
+                </div>
+                <div class="featureItem" ng-click="goToquality()">
+                    <div class="featureItemImg">
+                        <img src="../item/quality.png"/>
+                    </div>
+
+                    <div class="featureItemDesc">
+                        <p class="featureItemHeading">QUALITY CONTROL</p>
+                        <p class="featureItemDescription">At SRNSS, we are strict about quality. Our aim is to manufacture and deliver products with zero defect.</p>
+                    </div>
+                </div>
+                <div class="featureItem" ng-click="goTomanufacturing()">
+                    <div class="featureItemImg">
+                        <img src="item/0.jpeg"/>
+                    </div>
+                    <div class="featureItemDesc">
+                        <p class="featureItemHeading">Manufacturing unit</p>
+                        <p class="featureItemDescription">SRNSS is a leading manufacturer and exporter of Indian natural stones like granite, marble, state, sandstone, quartzite and limestone.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

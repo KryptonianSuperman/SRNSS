@@ -1,0 +1,44 @@
+<div id="itemDescWrap">
+    <div id="itemDetailsWrap">
+        <div id="itemDescHeader">
+            <h1>{{type}}</h1>
+        </div>
+
+        <div id="itemIntro">
+            <p>{{response.intro}}</p>
+        </div>
+    </div>
+
+    <div id="menuBar">
+        <div ng-repeat="subtypeItem in subtypeList" class="menuBarList">
+            <a href="/#!/view2/{{type}}/{{subtypeItem}}">{{response.subtype[subtypeItem].name}}</a>
+        </div>
+    </div>
+
+    <div id="itemDescMain">
+        <!--<div id="itemBody" ng-repeat="item in response.subtype">-->
+            <!--{{item.name}} <br>-->
+            <!--{{item.intro}}-->
+        <!--</div>-->
+        <div id="subtypeHeaderWrap">
+            <div id="subtypeHeading">
+                {{responseSubtype.name}}
+            </div>
+            <div id="subtypeIntro" ng-if="responseSubtype.intro">
+                {{responseSubtype.intro}}
+            </div>
+        </div>
+        <div id="subtypeItem" ng-repeat="stone in responseSubtype.stones">
+            <div id="subtypeItemImgWrap">
+                <img id="subtypeItemImg" ng-src="./item/{{type}}/{{subtype}}/{{stone[1]}}" />
+            </div>
+            <div id="subtypeItemDetails">
+                <div id="subtypeItemHeading">{{stone[0]}}</div>
+                <!--<div id="subtypeItemDesc">{{stone[2]}}</div>-->
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
